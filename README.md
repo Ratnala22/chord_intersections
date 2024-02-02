@@ -1,4 +1,4 @@
-# chord_intersections
+# Chord_Intersections
 Given the data points on a circle. calculating the number of intersections.
 
 ## Algorithm
@@ -33,5 +33,24 @@ let's discuss the algorithm step by step
 6. **Return the Final Count of Chord Intersections:**
    - The algorithm returns the final count of chord intersections (`intersections_count`).
 
+## Time Complexity
+
+1. **Dictionary Population:**
+   - Imagine you're organizing a list of chords, where each chord has its own set of radian measures. For each chord, you may need to update or add it to a dictionary.
+   - Think of the dictionary as a smart organizer that keeps chords sorted. Adding or updating a chord in the dictionary takes a bit of time, roughly proportional to how many radian measures that chord already has.
+   - If you have, let's say, 'n' chords and each chord has 'm' radian measures on average, then the time to organize this dictionary is like n students taking about m log m time each. So, the overall time here is about O(n log m).
+
+2. **Conversion to List (`chord_list`):**
+   - Now, you've organized your chords in a dictionary. You need to convert this organized information into a more straightforward list so that you can work with it easily.
+   - This conversion process takes time proportional to the number of chords, so it's like saying, "Hey, I have n chords; let me put them in a list." That takes roughly O(n) time.
+
+3. **Intersection Checking:**
+   - Here's where things get a bit more involved. You need to check if any of the chords are crossing paths, which requires comparing each chord with all the others.
+   - Imagine you're at a party with n friends. You decide to chat with everyone there, and each friend talks to almost everyone else at the party. This "talking to everyone" process takes some time, and in computer science terms, we say it takes O(n^2) time.
+
+4. **Overall Time Complexity:**
+   - So, when you put it all together, the time it takes to organize the chords in the dictionary and then check for intersections is dominated by the "talking to everyone at the party" part. That's why the overall time complexity is O(n^2).
+
+In short, it's like sorting out a list of chords and then checking if any of them cross paths, and the most time-consuming part is the chatting at the party where everyone talks to almost everyone else. That's the O(n^2) part.
 
 
