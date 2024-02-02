@@ -40,9 +40,11 @@ def calculate_chord_intersections(input_list):
 
 if __name__ == "__main__":
   #test case 1:
-  input_list=[(0.78, 1.47, 1.77, 3.92),('s0', 's1', 'e0', 'e1')]
+  input_list=[(0.78, 1.47, 1.77, 3.92),('s_1', 's_2', 'e_1', 'e_2')]
   print(calculate_chord_intersections(input_list))
   #test case 2:
+  input_list=[(0.9, 1.3, 1.70, 2.92),("s1", "e1", "s2", "e2")]
+  print(calculate_chord_intersections(input_list))
 
   
   
