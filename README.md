@@ -3,7 +3,9 @@ Given the data points on a circle. calculating the number of intersections.
 
 ## Algorithm
 
-Certainly! Let's break down the algorithm step by step:
+The algorithm essentially builds a dictionary to organize radian measures for each chord identifier and then checks for intersections by comparing each chord with all subsequent chords. The XOR operation is used to determine if the chords intersect, and the intersection count is incremented accordingly.
+
+let's discuss the algorithm step by step
 
 1. **Initialize the Dictionary (`chord_dict`):**
    - The algorithm starts by creating an empty dictionary called `chord_dict`. This dictionary will be used to store the radian measures for each chord identifier.
@@ -31,6 +33,5 @@ Certainly! Let's break down the algorithm step by step:
 6. **Return the Final Count of Chord Intersections:**
    - The algorithm returns the final count of chord intersections (`intersections_count`).
 
-The algorithm essentially builds a dictionary to organize radian measures for each chord identifier and then checks for intersections by comparing each chord with all subsequent chords. The XOR operation is used to determine if the chords intersect, and the intersection count is incremented accordingly.
 
 
